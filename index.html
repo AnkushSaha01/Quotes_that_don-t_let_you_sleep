@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <style type="text/tailwindcss">
+    @theme {
+      --font-zalando: "Zalando Sans", sans-serif;
+      --font-zalando-expanded: "Zalando Sans Expanded", sans-serif;
+    }
+    
+    .font-zalando {
+      font-family: "Zalando Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+
+    .font-zalando-expanded {
+      font-family: "Zalando Sans Expanded", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+  </style>
+  <title>Quotes</title>
+</head>
+<body>
+  <div class="w-screen h-dvh bg-black py-[50px] flex flex-col items-center justify-between">
+    <!-- Quotes header -->
+    <div class=" w-[80%] flex flex-col items-center  gap-4">
+      <div class="w-full flex items-center justify-center md:justify-start">
+        <h1 class="font-zalando text-white text-center md:text-start text-xl uppercase font-medium">Quotes</h1>
+      </div>
+      <div class="w-full h-[1px] bg-gray-500"></div> 
+    </div>
+    <!-- Quote content -->
+    <div class="w-full flex flex-col items-center ">
+      <h2 id="quote" class="w-[80%] font-zalando-expanded text-white text-4xl sm:text-5xl lg:text-6xl font-bold uppercase text-center">"One drunk man is smarter than two wemen with PHDs"</h2>
+      <div class="w-[80%] flex justify-end  py-4"><h4 id="author" class="text-[#bdbdbd] font-zalando font-medium">~One Drunk Man</h4></div>
+      <div class="w-[80%] flex justify-center lg:justify-end">
+        <button id="nextBtn" class="w-[100%] mt-[20px] bg-[#50ba54] text-white font-zalando font-medium px-4 py-2 rounded-md hover:bg-[#60e065] cursor-pointer transition-colors duration-200 lg:w-[20%]">Next</button>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="w-[80%] flex flex-col items-center justify-center md:items-end gap-4">
+      <div class="w-[100%] h-[1px] bg-gray-500"></div><p class="w-[200px] text-gray-400 font-zalando font-thin text-center md:text-end leading-tight">One quote a day, keeps the procastination away</p></div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
